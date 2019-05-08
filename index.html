@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-  <style>
-      body{
-    background-color: white;
-}
-
-
-#header{
-    display:flex;
-    justify-content:space-around;
-}
-
-input {
-    border:solid 2px;
-    border-radius: 10px;
-}
-
-      
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 </head>
+
 <body>
+  
 <div id = "navbar">
-    <ul>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="news.asp">News</a></li>
-      <li><a href="contact.asp">Contact</a></li>
-      <li><a href="about.asp">About</a></li>
-    </ul>
- </div>
-<h1></h1>
-<input placeholder="Insert Movie">
+  <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+</div>
 
+ <div id="opening">
+<h1 id = "title">FilmNation</h1>
+  <div>
+  <img id ="pop" src ="https://listimg.pinclipart.com/picdir/s/36-360653_there-were-times-when-feys-character-had-to.png">
+  </div>
+</div>
 
+<input placeholder = "Insert Movie" id = "search">
+<button id = "searchbutton">Search!</button>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+ <script src="js/script.js"></script>
 </body>
 </html>
