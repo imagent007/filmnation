@@ -1,10 +1,17 @@
 body{
-    background-color: grey;
+    background-color: #232323;
     text-align: center;
+    color: red;
+    font-family: 'Baloo Bhai', cursive;
 }
 
 h1 {
+  font-family: 'Baloo Bhai', cursive;
   color: red;  
+  text-align: center;
+}
+h2 {
+  size: 35px;
 }
 
 #title {
@@ -13,16 +20,19 @@ h1 {
 }
 #pop {
   width: 60px;
+  height: 60px;
   }
  
-#opening {
-  display: flex;
-  justify-content: flex-start;
-}
-
 #navbar {
+  text-align: center;
   display: flex;
   justify-content: space-around;
+  width: auto;
+  border: solid 10px red;
+}
+
+.placeholder {
+  color: red;
 }
 
 ul {
@@ -31,7 +41,6 @@ ul {
   width: 4000px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: black;
 }
@@ -46,6 +55,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 0.7s;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -54,34 +64,5 @@ li a:hover {
   color: black;
 }
 
-input {
-  color: white;
-  width: 90px;
-  height: 25px;
-  border:solid 0px;
-  background-color:black;
-}
 
-input:hover {
-  color:black;
-  width: 90px;
-  height: 25px;
-  border:solid 0px;
-  background-color: red;
-}
 
-button {
-  color: red;
-  width: 100px;
-  height: 25px;
-  background:black;
-  border:solid 0px;
-}
-
-button:hover {
-  color:black;
-  width: 100px;
-  height: 30px;
-  background: red;
-  border:solid 0px;
-}

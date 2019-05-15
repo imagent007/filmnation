@@ -2,30 +2,121 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <style>
+.button {
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#search {
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#search span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#search span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#search:hover span {
+  padding-right: 25px;
+}
+
+#search:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  </style>
 </head>
 
 <body>
   
 <div id = "navbar">
   <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
 </ul>
 </div>
 
- <div id="opening">
-<h1 id = "title">FilmNation</h1>
   <div>
-  <img id ="pop" src ="https://listimg.pinclipart.com/picdir/s/36-360653_there-were-times-when-feys-character-had-to.png">
+    <h1 id = "title">FilmNation</h1>
   </div>
-</div>
+  <br>
+  <p> Want to find info on your favorite movies? You've come to the right place!</p>
+  <br>
+<input id="search" placeholder="Insert Movie"></input>
 
-<input placeholder = "Insert Movie" id = "search">
-<button id = "searchbutton">Search!</button>
+<br>
+<br>
+<br>
+
+<button class="button"><span>Search </span></button>
+<div id="results"> </div>
+
+<br>
+<br>
+<br>
+
+<div class=footer>
+  <p>None of the content on this page should be reproduced or retransmitted without proper digital or written consent by FilmNation&copy</p>
+</div>
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
