@@ -9,12 +9,23 @@ $(".button").click(function(){
     success: function(response){
          console.log(response);
 
-        $("#results").html("<h2>" + response.Title + "</h2>" 
+        if (response.Year < "2019") {
+            $("#results").html("<h2>" + response.Title + "</h2>" 
         + "<img src=" + response.Poster + ">" +
         "<p> This movie was released in " + response.Year + ".</p>" +
         "<p>" + response.Plot  + "</p>");
+        }
+        
+        if (response.Year > "2019") {
+            $("#results").html("<h2>" + response.Title + "</h2>" 
+            + "<img src=" + response.Poster + ">" +
+            "<p> This movie will be released in " + response.Year + ".</p>" +
+            "<p>" + response.Plot  + "</p>");
+        }
         
     },
 
     });
 });
+
+
